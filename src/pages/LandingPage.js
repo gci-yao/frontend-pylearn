@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { courseService } from '../services/api';
 
+
 const FEATURES = [
   {
     icon: '🐍',
@@ -129,11 +130,18 @@ export default function LandingPage() {
               Niveaux
             </a>
 
-            <Link to="/login" style={styles.navGhost}>
-              Connexion
-            </Link>
+            {/* <Link to="/login" style={styles.navGhost}>
+              🔑connexion
+            </Link> */}
+            {/* NOUVEAU BOUTON APK AJOUTÉ ICI */}
+            <a 
+              href="/pylearn.apk" 
+              download="pylearn.apk" 
+              style={styles.navGhost}
+            >
+              <span>🤖 Télécharger APK</span>
+            </a>
 
-            
           </div>
         </div>
       </nav>
@@ -187,7 +195,7 @@ export default function LandingPage() {
               to="/login"
               style={styles.secondaryBtn}
             >
-              J’ai déjà un compte
+              J’ai déjà un compte 👤
             </Link>
           </div>
 
@@ -575,7 +583,7 @@ const styles = {
     padding: '10px 16px',
     borderRadius: 12,
     border: '1px solid rgba(255,255,255,0.08)',
-    background: 'rgba(255,255,255,0.03)',
+    background: 'rgba(2, 5, 21, 0.81)',
     color: '#fff',
     fontSize: 14,
   },
@@ -966,5 +974,20 @@ const styles = {
     textAlign: 'center',
     color: '#4b5563',
     fontSize: 12,
+  },
+
+  navDownloadBtn: {
+    background: '#22c55e', // Vert PyLearn
+    color: '#ffffff',
+    padding: '8px 16px',
+    borderRadius: '20px',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    fontSize: '14px',
+    display: 'flex',
+    alignItems: 'center',
+    transition: 'background 0.2s ease',
+    border: 'none',
+    cursor: 'pointer',
   },
 };
