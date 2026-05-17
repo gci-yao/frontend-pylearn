@@ -133,12 +133,7 @@ export default function LandingPage() {
               Connexion
             </Link>
 
-            <Link
-              to="/register"
-              style={styles.navButton}
-            >
-              Commencer
-            </Link>
+            
           </div>
         </div>
       </nav>
@@ -445,7 +440,7 @@ class Student:
         </div>
 
         <p style={styles.copy}>
-          © 2025 PyLearn — Tous droits réservés
+          © 2026 PyLearn — Tous droits réservés from charles pre-Sales engeneer
         </p>
       </footer>
     </div>
@@ -741,6 +736,7 @@ const styles = {
     overflow: 'hidden',
     border: '1px solid rgba(255,255,255,0.06)',
     boxShadow: '0 30px 80px rgba(0,0,0,0.55)',
+    marginLeft: '47px', 
   },
 
   codeHeader: {
